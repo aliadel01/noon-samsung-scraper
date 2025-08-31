@@ -1,2 +1,81 @@
-# noon-samsung-scraper
-Web scraping Samsung products from Noon Egypt using Python, BeautifulSoup, and Selenium.
+# 🛒 Noon Egypt Samsung Scraper
+
+## 📌 Overview
+This project scrapes detailed information about **Samsung products** from [Noon Egypt](https://www.noon.com/egypt-en/).  
+Using **Requests**, **BeautifulSoup**, and **Selenium**, it collects structured data (names, prices, ratings, brands, categories, etc.) into a dataset ready for analysis.
+
+---
+
+## ✨ Highlights
+- ✅ Scraped **hundreds of Samsung products**
+- ✅ Extracted: name, price, rating, brand, category, seller, image, etc.
+- ✅ Exported results as a structured dataset: `products.csv`
+- ✅ Easy to extend to other brands or categories
+
+---
+
+## 📂 Project Structure
+📦 noon-samsung-scraper
+┣ 📜 note.ipynb # Jupyter Notebook (scraping + processing)
+┣ 📜 products.csv # Exported dataset
+┣ 📜 requirements.txt # Python dependencies
+┗ 📜 README.md # Project documentation
+
+
+---
+
+## ⚙️ Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/noon-samsung-scraper.git
+   cd noon-samsung-scraper
+
+2. Install dependencies:
+
+pip install -r requirements.txt
+
+🗂️ Data Structure
+
+The exported dataset contains the following columns:
+
+
+| Column                 | Description                      |
+| ---------------------- | -------------------------------- |
+| `name`                 | Product name                     |
+| `rating`               | Average rating                   |
+| `number_of_ratings`    | Number of customer ratings       |
+| `category`             | Main category                    |
+| `subcategory`          | Subcategory                      |
+| `brand`                | Brand name                       |
+| `price`                | Current price                    |
+| `discount`             | Discount amount (if available)   |
+| `sold_by`              | Seller information               |
+| `best_seller_rank`     | Best seller rank                 |
+| `best_seller_category` | Category for best-seller ranking |
+| `image`                | Product image URL                |
+
+## 📊 Results
+
+Extracted structured dataset with Samsung products from Noon Egypt
+
+Data is suitable for:
+
+📈 Price analysis
+
+⭐ Rating distribution
+
+🏆 Best-seller trend analysis
+
+## 🔮 Future Work
+
+🧹 Clean & normalize numerical data (prices, ratings)
+
+📊 Visualize insights (price distributions, top brands, rating trends)
+
+🛒 Extend scraping to other brands and categories
+
+## 🙌 Credits
+
+Ali — Developer & Data Engineer in training
+
+Built with ❤️ using Python, Requests, BeautifulSoup, Selenium, and Pandas
